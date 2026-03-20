@@ -1,0 +1,70 @@
+.add-course-form {
+    padding: var(--spacing-xl);
+    max-width: 600px;
+    margin: 0 auto;
+    /* Card structural styling is inherited from global .card */
+}
+
+.add-course-form h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    font-size: 2rem;
+}
+
+.add-course-form .form-group {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.add-course-form .form-group label {
+    display: block;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.add-course-form .form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.add-course-form .form-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.add-course-form button {
+    width: 100%;
+    margin-top: var(--spacing-md);
+}
+
+.success-msg {
+    color: var(--success);
+    margin-top: var(--spacing-md);
+    text-align: center;
+    font-weight: 500;
+    padding: 12px;
+    background: #ecfdf5;
+    border-radius: 8px;
+}
+
+.error-msg {
+    color: var(--danger);
+    margin-top: var(--spacing-md);
+    text-align: center;
+    font-weight: 500;
+    padding: 12px;
+    background: #fef2f2;
+    border-radius: 8px;
+}

@@ -1,0 +1,113 @@
+.footer {
+    background: #f8fafc;
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid #e2e8f0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.2fr 1.6fr;
+    gap: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    align-items: start;
+}
+
+/* Column headings */
+.footer h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Brand description */
+.footer-brand p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+/* Link columns */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col ul li a {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Contact column */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.contact-list li a {
+    color: var(--accent-color);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.contact-list li a:hover {
+    color: #1d4ed8;
+}
+
+.contact-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+/* Bottom bar */
+.footer-bottom {
+    border-top: 1px solid #e2e8f0;
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

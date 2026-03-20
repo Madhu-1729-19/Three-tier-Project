@@ -1,0 +1,57 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    /* Plain white as requested */
+    border-bottom: 1px solid #e2e8f0;
+    padding: var(--spacing-md) 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    /* Very subtle shadow so it doesn't look completely flat against the page body if scrolling */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-logo span {
+    color: var(--accent-color);
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.nav-item {
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--accent-color);
+}
+
+.nav-item.btn-primary {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        /* Hide for now or implement mobile menu toggle later */
+    }
+}
